@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Kopieren',
+      copy_success: 'Kopiert',
+      copy_failure: 'Kopieren fehlgeschlagen'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="iframe标签1&amp;lt;iframe src=&quot;&quot; name=&quot;xxx&quot; frameborder=&quot;0&quot;&amp;gt;&amp;lt;&#x2F;frame&amp;gt; 嵌套页面，其中src表示默认打开的页面，name属性通常指向一个a标签，用于指定需要打开的链接，frameborder属性是边框，一般设为0，表示无边框 12&amp;lt;iframe src=&amp;quot;&amp;quot; name=&amp;quot;xxx&amp;quot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="几个重要的HTML标签">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;05&#x2F;%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84HTML%E6%A0%87%E7%AD%BE&#x2F;index.html">
+<meta property="og:site_name" content="lmj&#39;blog">
+<meta property="og:description" content="iframe标签1&amp;lt;iframe src=&quot;&quot; name=&quot;xxx&quot; frameborder=&quot;0&quot;&amp;gt;&amp;lt;&#x2F;frame&amp;gt; 嵌套页面，其中src表示默认打开的页面，name属性通常指向一个a标签，用于指定需要打开的链接，frameborder属性是边框，一般设为0，表示无边框 12&amp;lt;iframe src=&amp;quot;&amp;quot; name=&amp;quot;xxx&amp;quot;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-04T21:42:22.730Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2019/11/05/%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84HTML%E6%A0%87%E7%AD%BE/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>几个重要的HTML标签 | lmj'blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">lmj'blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">永远年轻，永远热泪盈眶</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/05/%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84HTML%E6%A0%87%E7%AD%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ava.jpg">
+      <meta itemprop="name" content="lmj">
+      <meta itemprop="description" content="在路上">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lmj'blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          几个重要的HTML标签
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建于：2019-11-05 08:35:51 / 更新于：05:42:22" itemprop="dateCreated datePublished" datetime="2019-11-05T08:35:51+08:00">2019-11-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="iframe标签"><a href="#iframe标签" class="headerlink" title="iframe标签"></a>iframe标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">""</span> <span class="attr">name</span>=<span class="string">"xxx"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span>&gt;</span><span class="tag">&lt;/<span class="name">frame</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>嵌套页面，其中src表示默认打开的页面，name属性通常指向一个a标签，用于指定需要打开的链接，frameborder属性是边框，一般设为0，表示无边框</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;&quot; name=&quot;xxx&quot; frameborder=&quot;0&quot;&gt;</span><br><span class="line">&lt;a href=&quot;http://qq.com&quot; target=&quot;_blank&quot;&gt;qq&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe" target="_blank" rel="noopener">iframe</a></p>
+<a id="more"></a>
+<h3 id="a标签"><a href="#a标签" class="headerlink" title="a标签"></a>a标签</h3><h5 id="a标签跳转页面（HTTP-GET）是get请求"><a href="#a标签跳转页面（HTTP-GET）是get请求" class="headerlink" title="a标签跳转页面（HTTP GET）是get请求"></a>a标签跳转页面（HTTP GET）是get请求</h5><p>href属性指定链接地址，//无协议地址，会继承页面的协议。<br>      href=”#” 表示回到顶部，href=”#sdsd” 当前页面内的跳转<br>    href=”javascript:” 伪协议，在a标签内执行js,<br>               href=”javascript:;” 表示点击a标签后不跳转，也就是什么也不做(href=””浏览器会默认刷新页面）<br>    href=”./index.html”   href中也可是文件路径/相对路径<br>     target属性指定打开链接的方式，有4个属性值。<br>        _blank 表示在新开页面打开链接<br>      _self 表示在自己所在的页面打开，当前处于一个iframe标签时，就在这个iframe内打开<br>      _parent 在父级页面中打开<br>      _top 在顶层页面中打开(target属性结合iframe标签更好理解）<br>     download属性表示下载href指定的东西，有一个属性值可以指定名称；download=”filename”</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">download</span>=<span class="string">"filename"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a" target="_blank" rel="noopener">a</a></p>
+<h3 id="form标签"><a href="#form标签" class="headerlink" title="form标签"></a>form标签</h3><h5 id="HTTP-POST-form标签一般指定method为post，结合inpu标签使用（如果form标签下没有input按钮，就不会发送post请求）"><a href="#HTTP-POST-form标签一般指定method为post，结合inpu标签使用（如果form标签下没有input按钮，就不会发送post请求）" class="headerlink" title="(HTTP POST)form标签一般指定method为post，结合inpu标签使用（如果form标签下没有input按钮，就不会发送post请求）"></a>(HTTP POST)form标签一般指定method为post，结合inpu标签使用（如果form标签下没有input按钮，就不会发送post请求）</h5><p>form的method属性有post和get两个值，一般get用a标签，所以method属性值都是post</p>
+<p>More info: <a href="https://https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form" target="_blank" rel="noopener">form</a></p>
+<h3 id="input标签"><a href="#input标签" class="headerlink" title="input标签"></a>input标签</h3><h5 id="type属性指定input的类型，type-”submit”-则可以发送post请求，type-”button”-则不会发送post请求。但是当form表单里只有一个button标签的时候，注意是button标签，而且没有指定button标签的type属性值，则button标签会升级为提交按钮，也会发送post请求"><a href="#type属性指定input的类型，type-”submit”-则可以发送post请求，type-”button”-则不会发送post请求。但是当form表单里只有一个button标签的时候，注意是button标签，而且没有指定button标签的type属性值，则button标签会升级为提交按钮，也会发送post请求" class="headerlink" title="type属性指定input的类型，type=”submit” 则可以发送post请求，type=”button” 则不会发送post请求。但是当form表单里只有一个button标签的时候，注意是button标签，而且没有指定button标签的type属性值，则button标签会升级为提交按钮，也会发送post请求"></a>type属性指定input的类型，type=”submit” 则可以发送post请求，type=”button” 则不会发送post请求。但是当form表单里只有一个button标签的时候，注意是button标签，而且没有指定button标签的type属性值，则button标签会升级为提交按钮，也会发送post请求</h5><p>type=”checkbox” 则当前input标签是多选框<br>input标签和label标签合用时，例如</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span>&gt;</span>香蕉<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>#####则input标签可以勾选。type=”radio” 圆形框，只有name属性相同时才是单选</p>
+<p>More info: <a href="https://https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input" target="_blank" rel="noopener">input</a></p>
+<h3 id="select标签"><a href="#select标签" class="headerlink" title="select标签"></a>select标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">"group"</span> <span class="attr">multiple</span>&gt;</span>下拉列表 select（选择，挑选);name属性指定列表名，在提交后会在浏览器的地址栏显示;multiple（多个的）属性让下拉列表可以多选</span><br><span class="line"> <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>-<span class="tag">&lt;/<span class="name">option</span>&gt;</span> option标签指定列表项目</span><br><span class="line"> <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"1"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"2"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"3"</span> <span class="attr">disabled</span>&gt;</span>3<span class="tag">&lt;/<span class="name">option</span>&gt;</span> disabled表示不可选</span><br><span class="line"> <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"4"</span> <span class="attr">selected</span>&gt;</span>4<span class="tag">&lt;/<span class="name">option</span>&gt;</span> selected表示默认选中的</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="table标签"><a href="#table标签" class="headerlink" title="table标签"></a>table标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span>标签   border-collapse: collapse;消除列表内部单元格的边框</span><br><span class="line">	<span class="tag">&lt;<span class="name">theady</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th年龄</span>&gt;</span><span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">theady</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span>小红<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>16<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span>小名<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>16<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">tfoot</span>&gt;</span><span class="tag">&lt;/<span class="name">tfoot</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">th</span>&gt;</span>//表示表格中的项目，也就是每一行或者列的开头。<span class="tag">&lt;<span class="name">td</span>&gt;</span>表示一项下面的具体数据是什么</span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">colgroup</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">col</span> <span class="attr">width</span> = <span class="string">100</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">col</span> <span class="attr">bgcolor</span>=<span class="string">red</span> <span class="attr">width</span>=<span class="string">200</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">colgroup</span>&gt;</span></span><br><span class="line">colgroup指定列表的单元格宽度和背景颜色</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/05/%E5%88%A9%E7%94%A8hexo%E6%90%AD%E5%BB%BAgithub%E5%8D%9A%E5%AE%A2/" rel="next" title="利用Hexo搭建github博客">
+                  <i class="fa fa-chevron-left"></i> 利用Hexo搭建github博客
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#iframe标签"><span class="nav-number">1.</span> <span class="nav-text">iframe标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#a标签"><span class="nav-number">2.</span> <span class="nav-text">a标签</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#a标签跳转页面（HTTP-GET）是get请求"><span class="nav-number">2.0.1.</span> <span class="nav-text">a标签跳转页面（HTTP GET）是get请求</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#form标签"><span class="nav-number">3.</span> <span class="nav-text">form标签</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#HTTP-POST-form标签一般指定method为post，结合inpu标签使用（如果form标签下没有input按钮，就不会发送post请求）"><span class="nav-number">3.0.1.</span> <span class="nav-text">(HTTP POST)form标签一般指定method为post，结合inpu标签使用（如果form标签下没有input按钮，就不会发送post请求）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#input标签"><span class="nav-number">4.</span> <span class="nav-text">input标签</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#type属性指定input的类型，type-”submit”-则可以发送post请求，type-”button”-则不会发送post请求。但是当form表单里只有一个button标签的时候，注意是button标签，而且没有指定button标签的type属性值，则button标签会升级为提交按钮，也会发送post请求"><span class="nav-number">4.0.1.</span> <span class="nav-text">type属性指定input的类型，type=”submit” 则可以发送post请求，type=”button” 则不会发送post请求。但是当form表单里只有一个button标签的时候，注意是button标签，而且没有指定button标签的type属性值，则button标签会升级为提交按钮，也会发送post请求</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#select标签"><span class="nav-number">5.</span> <span class="nav-text">select标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#table标签"><span class="nav-number">6.</span> <span class="nav-text">table标签</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="lmj"
+    src="/images/ava.jpg">
+  <p class="site-author-name" itemprop="name">lmj</p>
+  <div class="site-description" itemprop="description">在路上</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/rqlmj" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;rqlmj" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lmj</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
