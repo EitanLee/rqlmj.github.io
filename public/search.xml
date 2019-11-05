@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>关于HTML</title>
+    <url>/2019/11/05/%E5%85%B3%E4%BA%8EHTML/</url>
+    <content><![CDATA[<h3> 什么是<a href="https://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F" target="_blank" rel="noopener">W3C</a></h3>
+&ensp;&ensp;&ensp;&ensp;万维网联盟(W3C)是一个致力于改进网络的国际组织。它由来自各种相关IT行业的数百个成员组织组成。W3C为万维网(WWW)制定标准，以促进所有网络利益相关者之间的互操作性和合作。它是由WWW的创建者TimBerners-Lee于1994年建立的.
+<br>
+<h3><a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN</a></h3>
+&ensp;&ensp;&ensp;&ensp;MDN Web Docs是开发人员的资源，由开发人员和技术作家社区维护，并在许多主题上托管许多文档，例如：HTML5，JavaScript，CSS，Web API，Node.js，WebExtensions和MathML。对于网站开发人员，MDN提供有关主题的文档，例如，构建HTML5移动应用程序，构建移动附加组件和位置感知应用程序。
+
+<h4><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element" target="_blank" rel="noopener">HTML中所有标签列表</a></h4>
+
+<h4>什么是空标签</h4>
+&ensp;&ensp;&ensp;&ensp;一些元素只有一个标签，通常用来在此元素所在位置插入/嵌入一些东西。这种没有闭合的标签就是空标签，例如：元素
+&lt;img&gt;是用来在元素&lt;img&gt;所在位置插入一张指定的图片。例子如下：<br>
+&lt;img src="http://b-ssl.duitang.com/uploads/item/201505/17/20150517201136_GBWZM.jpeg"&gt;
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572976666198&di=4394a9c35260c8b82f4a1bc61f151031&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201812%2F09%2F20181209113623_U4vVx.jpeg" alt="Koto no ha no niwa">
+<a id="more"></a>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">area</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">base</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">col</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">colgroup</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">command</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">embed</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">keygen</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">source</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">track</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">wbr</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4>什么是可替换标签</h4>
+&ensp;&ensp;&ensp;&ensp;顾名思义就是会被替换的标签。比如一个典型的可替换元素 img：<br>
+
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572976260678&di=f99cec0e0cd59f8722f0fa3fdeb6abdc&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190728%2Fd1c058f244d84c9394bf464bcae74457.jpeg" alt="Weathering with you">
+
+<p> img标签是浏览器去下载 src 属性给到的图片，并用该图片资源替换掉 img 标签，而且浏览器在下载前并不知道图片的宽高。所以，可替换元素比较特殊，它的宽高是由其加载的内容决定的。（当然 CSS 可以覆盖其样式）<br>典型的可替换元素有 &lt;iframe&gt; &lt;video&gt; &lt;embed&gt; &lt;img&gt; ，还有一些元素仅在特定情况下被作为可替换元素处理，比如 &lt;input&gt; </p>
+]]></content>
+  </entry>
+  <entry>
     <title>几个重要的HTML标签</title>
     <url>/2019/11/05/%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84HTML%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<h3 id="iframe标签"><a href="#iframe标签" class="headerlink" title="iframe标签"></a>iframe标签</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">""</span> <span class="attr">name</span>=<span class="string">"xxx"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span>&gt;</span><span class="tag">&lt;/<span class="name">frame</span>&gt;</span></span><br></pre></td></tr></table></figure>
