@@ -3,13 +3,14 @@
   <entry>
     <title>HTTP Node.js HTML CSS 小结</title>
     <url>/2019/11/09/%E9%98%B6%E6%AE%B5%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<h2 id="回顾目前所学的知识点"><a href="#回顾目前所学的知识点" class="headerlink" title="回顾目前所学的知识点"></a>回顾目前所学的知识点</h2><h3 id="计算机是如何存储数据的"><a href="#计算机是如何存储数据的" class="headerlink" title="计算机是如何存储数据的"></a>计算机是如何存储数据的</h3><pre><code>计算机只能存0、1；二进制的数字
+    <content><![CDATA[<h3 id="计算机是如何存储数据的"><a href="#计算机是如何存储数据的" class="headerlink" title="计算机是如何存储数据的"></a>计算机是如何存储数据的</h3><pre><code>计算机只能存0、1；二进制的数字
 可以把十进制转成二进制，
 有十进制就可以存字母了
 ASCII ： 将字母转换为对应的数
 中文就是用GBK国标扩等转换为十六进制
 Unicode 将所有语言文字进行编码
-UTF-8和unicode相比，为计算机进行了优化，节省空间</code></pre><h3 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h3><pre><code>windows下尽量装C盘
+UTF-8和unicode相比，为计算机进行了优化，节省空间</code></pre><a id="more"></a>
+<h3 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h3><pre><code>windows下尽量装C盘
 git bash的安装遵守教程选择</code></pre><h3 id="命令行基础"><a href="#命令行基础" class="headerlink" title="命令行基础"></a>命令行基础</h3><pre><code>pwd     progress working dir  
 cd      change dir
 mkdir   make dir
