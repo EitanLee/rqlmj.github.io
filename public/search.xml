@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTTP Node.js HTML CSS 小结</title>
+    <url>/2019/11/09/%E9%98%B6%E6%AE%B5%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<h2 id="回顾目前所学的知识点"><a href="#回顾目前所学的知识点" class="headerlink" title="回顾目前所学的知识点"></a>回顾目前所学的知识点</h2><h3 id="计算机是如何存储数据的"><a href="#计算机是如何存储数据的" class="headerlink" title="计算机是如何存储数据的"></a>计算机是如何存储数据的</h3><pre><code>计算机只能存0、1；二进制的数字
+可以把十进制转成二进制，
+有十进制就可以存字母了
+ASCII ： 将字母转换为对应的数
+中文就是用GBK国标扩等转换为十六进制
+Unicode 将所有语言文字进行编码
+UTF-8和unicode相比，为计算机进行了优化，节省空间</code></pre><h3 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h3><pre><code>windows下尽量装C盘
+git bash的安装遵守教程选择</code></pre><h3 id="命令行基础"><a href="#命令行基础" class="headerlink" title="命令行基础"></a>命令行基础</h3><pre><code>pwd     progress working dir  
+cd      change dir
+mkdir   make dir
+touch 
+echo &quot;hello&quot; &gt; 1.txt
+echo &quot;hello&quot; &gt;&gt; 1.txt
+echo &quot;hello&quot; &gt;! 1.txt
+cp -r
+rm -rf
+mv 
+tree    windows不支持
+git init 
+git add
+git commit -m &quot;添加描述&quot;
+git pull
+git push 
+git clone 
+
+curl -L http://baidu.com
+curl -s -v -- http://baidu.com  
+
+ping qq.com 测网络延迟 发的是数据包，不需要加http
+
+hexo init
+hexo g
+hexo server
+hexo</code></pre><h3 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h3><pre><code>写一个文件，交给计算机执行，就是脚本</code></pre><h3 id="HTTP-入门"><a href="#HTTP-入门" class="headerlink" title="HTTP 入门"></a>HTTP 入门</h3><pre><code>GET 请求
+
+GET / HTTP/1.1              动词/路径/协议
+Host: baidu.com             服务器
+Accept: text/html           接受的东西
+
+响应
+HTTP/1.1 200 OK             
+Content-Type：text/html; charset=utf-8    获取的内容类型
+Content-Length:100000       字节长度
+
+POST请求
+
+POST /Login HTTP/1.1        
+Host: baidu.com
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+Content-Length:10
+
+username=xxxxxx&amp;password=xxxx  上传内容 
+
+响应POST请求
+
+HTTP/1.1 403 Forbidden
+Content-Type: application/md-word
+Content-Length: 200
+
+比喻版请求与响应
+
+工资请求
+
+GET 11月工资 工资协议/1.1
+Host: 百度公司
+Accept: 现金, 支付宝转账, 银行汇款
+
+工资响应
+
+工资协议/1.1 200 OK
+返回内容类型: 现金
+现金张数: 10
+
+浏览器调试工具——Network
+点击view source
+点击view source
+点击view source
+
+码：200 201 202 203 204
+       301 302 303 304 305
+       400 401 402 403 404
+       500 501 502 503 504     </code></pre><h3 id="Node-js-Server"><a href="#Node-js-Server" class="headerlink" title="Node.js Server"></a>Node.js Server</h3><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><pre><code>写link 用 href
+  script  src
+  img     src
+  iframe  src 
+  a       href</code></pre><h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><pre><code>1. float + clearfix
+2. 高度是由什么决定的
+     块元素和内联元素</code></pre>]]></content>
+  </entry>
+  <entry>
     <title>关于HTML</title>
     <url>/2019/11/05/%E5%85%B3%E4%BA%8EHTML/</url>
     <content><![CDATA[<h3> 什么是<a href="https://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F" target="_blank" rel="noopener">W3C</a></h3>
